@@ -1,24 +1,29 @@
-# README
+# Descripción
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Cree una aplicación Rails nueva con 1 controlador y 4 páginas
+estáticas. Con las siguientes características:
 
 Things you may want to cover:
 
-* Ruby version
+* La aplicaci´on debe estar alojada en GitHub como repositorio remoto
+utilizando su cuenta personal.
 
-* System dependencies
+* En producción utilizando Heroku y puede
+ser accedida a través de internet como un subdominio de Heroku (e.j
+https://apps-1-mrfoxxz.herokuapp.com/).
 
-* Configuration
+* El subdominio de Heroku es personalizado.
 
-* Database creation
+# Sobre las páginas:
 
-* Database initialization
+* El home debe contiene links hacia las otras 3 páginas estáticas y la fecha y hora actual.
 
-* How to run the test suite
+* La página estática 1 debe ser accedida a través del path "/basics" y
+debe responder las siguientes preguntas con sus propias palabras:
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+• ¿Qué es un resource en el contexto de una aplicación web REST
+en Ruby on Rails?
+• ¿Qu´e puede hacerse con un resource?
+• ¿Qu´e es RESTful routing?
+• ¿Cuántas acciones básicas tiene esta filosofía?
+• ¿Cuáles son?
