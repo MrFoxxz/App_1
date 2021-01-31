@@ -10,4 +10,7 @@ class AppController < ApplicationController
 
   def help
   end
+
+  def testing
+  end
 end
