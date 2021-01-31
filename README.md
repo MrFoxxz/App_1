@@ -1,4 +1,4 @@
-# Descripción
+## Descripción
 
 Cree una aplicación Rails nueva con 1 controlador y 4 páginas
 estáticas. Con las siguientes características:
