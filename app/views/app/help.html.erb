@@ -1,15 +1,27 @@
+<% provide(:title, "Help") %>
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Help</title>
+        <title><%= yield(:title) %> </title>
     </head>
 
     <body>
         <h1>Help</h1>
+
+        <h4>Sobre las páginas:</h4>
+
+        <p>* El home contiene links hacia las otras 3 páginas estáticas y la fecha y hora actual.</p>
+
+        <p>* La página estática 1 debe es accedida a través del path "/basics" y responde las siguientes preguntas con sus propias palabras:</p>
+
         <p>
-        This is the home page for the
-        <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-        sample application.
-        </p>
+        • ¿Qué es un resource en el contexto de una aplicación web REST
+        en Ruby on Rails?<br>
+        • ¿Qué puede hacerse con un resource?<br>
+        • ¿Qué es RESTful routing?<br>
+        • ¿Cuántas acciones básicas tiene esta filosofía?<br>
+        • ¿Cuáles son?<br></p>
+
+        <a href="/">Back to Home Page</a>
     </body>
 </html>

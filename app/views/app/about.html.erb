@@ -1,15 +1,29 @@
+<% provide(:title, "About") %>
 <!DOCTYPE html>
 <html>
     <head>
-        <title>About</title>
+        <title><%= yield(:title) %> </title>
     </head>
 
     <body>
         <h1>About</h1>
-        <p>
-        This is the home page for the
-        <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-        sample application.
+
+        <h4>Descripción</h4>
+
+        <p>Una aplicación Rails nueva con 1 controlador y 4 páginas
+        estáticas. Con las siguientes características:
         </p>
+
+        <p>* La aplicación esta alojada en GitHub como repositorio remoto
+        utilizando la cuenta persona (<a href="https://github.com/MrFoxxz/App_1">https://github.com/MrFoxxz/App_1</a>).
+        </p>
+
+        <p>* En producción utilizando Heroku y puede
+        ser accedida a través de internet como un subdominio de Heroku (<a href="https://apps-1-mrfoxxz.herokuapp.com/">https://apps-1-mrfoxxz.herokuapp.com/</a>).
+        </p>
+
+        <p>* El subdominio de Heroku es personalizado.</p><br>
+
+        <a href="/">Back to Home Page</a>
     </body>
 </html>
