@@ -5,10 +5,10 @@ class AppController < ApplicationController
   def basics
   end
 
-  def about
+  def ruby
   end
 
-  def help
+  def git
   end
 
   def testing

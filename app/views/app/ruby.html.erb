@@ -1,0 +1,103 @@
+<% provide(:title, "Ruby") %>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= yield(:title) %> </title>
+    </head>
+
+    <body>
+        <div class="center jumbotron">
+        <br><h2 class="titulo">Ruby</h2><br>
+
+        <h3>Interpolación de strings</h3>
+
+            <p>Para la interpolacion de string se pueden usar las siguientes formas:</p>
+            <pre>
+            #Definimos strings
+            first_name = "Miguel"
+            second_name = "Angel"
+
+            #Interpolamos
+            "first_name " + "last_name"
+            -> Miguel Angel </pre>
+
+        <h3>Cómo se declara un array y cómo se adiciona un elemento al final del array.</h3>
+
+            <p>Para definir un array se puede hacer de la siguiente manera: </p>
+            <pre>
+            # Mediante el uso de []
+            array = [element, element, element, ...]
+            ->[element, element, element, ...]
+
+            # Mediante el uso de el metodo split()
+            "tres tristes tigres".split(" ")
+            ->[tres, tristes, tigre] </pre>
+
+            <p>Para insertar un elemento al final del array, se utiliza: </p>
+            <pre>
+            array.push(element)
+
+            array << element] </pre>
+
+        <h3>Cómo se itera un array utilizando el comando each.</h3>
+
+            <p>Para la interpolacion de string se pueden usar las siguientes formas:</p>
+            <pre>
+            #Con solo each
+            [1,2,3,4].each {|i| puts i}      #Con este codigo usando block nos imprime los numeros del 1 al 4
+
+            #Usando each y do 
+            [1,2,3,4].each do |i|            
+            puts i  </pre>                  
+
+        <h3>Cómo se declara un hash.</h3>
+
+            <p>Lo puedes hacer de las siguientes maneras:</p>
+            <pre>
+            comida = hash.new
+            comida = { desayuno: 'Huevos fritos', almuerzo: 'Lasagna', postre: 'Pastel' }
+            comida = { :desayuno => 'Huevos fritos', :almuerzo => 'Lasagna', :postre => 'Pastel' }  </pre>
+
+        <h3>Cómo se itera un hash utilizando el comando each.</h3>
+
+            <p>Para iterar un hash usamos "key" y "value", el "key" puede ser el nombre del elemento y el "value" el valor de ese elemento. </p>
+            <pre>
+            comida.each { |key, value| puts "#{key}: #{value}" } </pre>
+
+        <h3>¿Qué es un block en ruby? De un ejemplo de cómo utilizarlo.</h3>
+
+            <p>Un block en ruby es una funcion anonima pasado a metodos pueden estar entre {} o entre do / end y los argumentos van entre pipes "|"
+            ejemplo:</p>
+            <pre>
+            (1..5).each { |i| puts 2 * i }
+            -> 2
+            -> 4
+            -> 6
+            -> 8
+            -> 10</pre>
+
+        <h3>¿Cuál es la convención en Ruby a la hora de nombrar variables?</h3>
+
+            <p>
+            Debe estar en minusculas<br>
+            No empezar con ningun caracter especial<br>
+            Si contiene multiples palabras, separarlas por (_)<br>
+            Evitar variables de un caracter<br>
+            Variables descriptivas<br></p>
+        
+            <pre>first_name = 'fernando'</pre>
+
+        <h3>¿Qué son attrreader, attrwriter y attraccesor?¿Para qué sirven?</h3>
+
+        <p>Para exponer instancias de clase fuera de la clase se utilizan los attr_accesor, attr_reader, attr_writer.
+        Estos son shortcuts que permiten crear metodos que crean los setter y getter el metodo.<br><br>
+
+        El attr_accesor permite escribir y obtener datos.<br>
+        El attr_reader permite solo leer datos.<br>
+        El attr_writer permite solo escribirlos.<br>
+        </p>
+
+        <a href="/">Back to Home Page</a>
+        </div>
+    </body>
+</html>

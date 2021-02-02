@@ -1,0 +1,65 @@
+<% provide(:title, "Git") %>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= yield(:title) %> </title>
+    </head>
+
+    <body>
+        <div class="center jumbotron">
+            <br><h2 class="titulo">Git</h2><br>
+
+        <h3>Inicialización  de  un  repositorio  de  git  nuevo  en  una  aplicación existente.</h3>
+
+            <p>Colocamos en la consola ubicados dentro de la carpeta de nuestra aplicación. </p>
+            <pre> git init </pre>
+
+        <h3>Creación de un branch nuevo.</h3>
+
+            <p>Para crear un nuevo branch y cambiar a este usar el comando</p>
+            <pre> git checkout -b new_branch_name </pre>
+
+        <h3>Realizar un commit incluyendo todos los cambios actuales.</h3>
+
+        <p>Para commitear todos los cambios actuales basta con <pre> git commit -a -m "comentario" </pre>, con este commando hace el commit para todos los archivos que han sido modificados o elminados,
+        en caso de tener archivos nuevos primero debemos agregarlos con <pre> git add </pre>.
+
+        <h3>Cómo enviar el código al repositorio remoto.</h3>
+
+            <p>Para enviar nuestros cambios debemos escribir el comando:</p>
+            <pre> git push </pre></p>
+
+        <h3>Cómo configurar el origen del repositorio remoto para evitar escribirlo siempre cada vez que se hace un push o un pull.</h3>
+
+            <p>Para configurar el origen debemos usar <pre> git remote add repository_url </pre>, 
+            despues de esto solo queda configurar el upstream con el comando <pre> git push -u origin branch</pre>.</p>
+
+        <h3>Diferencia entre un reset y revert.</h3>
+
+            <p>git revert crea un nuevo commit que deshace los cambios del anterior commit. 
+            Y git reset borra los cambios de los commits anteriores y el historial, y desplaza el HEAD al commit direccionado</p>
+
+        <h3>Además de cambiar de ramas, para qué más se puede utilizar elcomando git checkout.</h3>
+
+            <p>El comando checkout se puede utilizar para actualizar el arbol con los archivos correspondan al indice o al arbol especificado, de igual forma podemos crear branchs pasandole como argumento la flag -b,
+            un string y este creara una nueva branch nombrada como el string pasado.</p>
+
+        <h3>Como puede ver los commits que se han realizado en el proyecto.</h3>
+
+            <p>Con solo utilizar el comando <pre> git log</pre> mostrara todos los commit, pero debe tener en cuenta que si la lista es 
+            muy larga solo mostrara los mas nuevos para ver los mas antiguos debe recorrer el log y para salir de estos solo con escribir q se cerrara el log.</p>
+
+        <h3>He modificado dos archivos y quiero hacer un commit por cadauno de ellos, ¿cómo lo puedo hacer?</h3>
+
+            <p>agregando primero uno de los archivos a stagin luego creando un commit para este. Despues se repite el proceso para el otro archivos</p>
+
+        <pre>
+        git add first_file
+        
+        git commit -m "first file commit"</pre>
+
+
+        <a href="/">Back to Home Page</a>
+        </div>
+    </body>
+</html>

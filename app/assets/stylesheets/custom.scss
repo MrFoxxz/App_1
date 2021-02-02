@@ -1,2 +1,32 @@
 @import"bootstrap-sprockets";
 @import"bootstrap";
+
+.tcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imgcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clock {
+    align-self: center;
+    color: #dfd9d9;
+}
+
+.navlist {
+    align-self: center;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-size: 14px!important;
+}
