@@ -8,9 +8,28 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
   </head>
 
   <body>
-    <%= yield %>
+    <header class="navbar navbar-fixed-top navbar-inverse"> 
+    <div class="container">
+      <%= link_to "app_1",'#', id:"logo" %>
+
+      <nav> 
+        <ul class="nav navbar-nav navbar-right">
+          <li> <%=link_to "Home", '/' %></li>
+          <li> <%=link_to "Basics", '/app/basics' %></li>
+          <li> <%=link_to "About", '/app/about' %></li>
+          <li> <%=link_to "Help", '/app/help' %></li>
+          <li> <%=link_to "Testing", '/app/testing' %></li>
+        </ul>
+      </nav>
+    </div>
+    </header>
+
+    <div class="container">
+      <%=yield%> 
+    </div>
   </body>
 </html>
